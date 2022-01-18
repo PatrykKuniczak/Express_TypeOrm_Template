@@ -26,8 +26,4 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use('/api', BaseRouter);
 
-app.listen(process.env.PORT, () => {
-    logger.info('Express server started on port: ' + process.env.PORT);
-});
-
 export default app;
